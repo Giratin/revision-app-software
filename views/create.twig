@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New User</title>
+</head>
+<body>
+    <a href="/users"> Go Bak To List </a>
+
+    <fieldset>
+        <legend> Create New User </legend>
+        <form action="/users/create" method="post" enctype="multipart/form-data" >
+            <table>
+                <tr>
+                    <td> First Name </td>
+                    <td> <input type="text" required placeholder="First Name" name="firstName" > </td>
+                </tr>
+                <tr>
+                    <td> Last Name </td>
+                    <td> <input type="text" required placeholder="Last Name" name="lastName" > </td>
+                </tr>
+                <tr>
+                    <td> Email </td>
+                    <td> <input type="email" required placeholder="Email" name="email" > </td>
+                </tr>
+                <tr>
+                    <td> Image </td>
+                    <td> <input type="file" name="image" > </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Save">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+</html>
